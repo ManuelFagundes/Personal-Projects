@@ -6,25 +6,25 @@ I wrote this because I really enjoy listening and reading news in different lang
 
 # **Features**
 
-- *Audio Extraction:* Pulls audio from YouTube and YouTube Music URLs.
+- **Audio Extraction:** Pulls audio from YouTube and YouTube Music URLs.
 
-- *Multi-Format Output:* You can save the transcript as a plain text file (.txt), a Word document (.docx), or a subtitle file (.srt) with timestamps.
+- **Multi-Format Output:** You can save the transcript as a plain text file (.txt), a Word document (.docx), or a subtitle file (.srt) with timestamps.
 
-- *Massive Language Support:* I added a huge list of languages—pretty much all the major ones by native and non-native speakers, plus the G20 countries. If the language isn't on the list, you might need to add it, but there's a good chance it's already there.
+- **Massive Language Support:** I added a huge list of languages—pretty much all the major ones by native and non-native speakers, plus the G20 countries. If the language isn't on the list, you might need to add it, but there's a good chance it's already there.
 
-- *Handles Long Videos:* I bumped up the API timeout, so it should handle even longer content without giving you that annoying "timeout" error. 
+- **Handles Long Videos:** I bumped up the API timeout, so it should handle even longer content without giving you that annoying "timeout" error. 
 
 # **Before You Run**
 
-- *To get this script working, you need a few things set up:*
+## **To get this script working, you need a few things set up:**
 
-- *Python Libraries:* You need to install the libraries listed in the script. You can probably just run this: pip install -r requirements.txt. (I'll add the requirements.txt to the repo later, but for now just install the libraries.)
+- **Python Libraries:** You need to install the libraries listed in the script. You can probably just run this: ```pip install -r requirements.txt```.
 
-- *Google Cloud Project:* You need a Google Cloud Project with the Speech-to-Text API enabled.
+- **Google Cloud Project:** You need a Google Cloud Project with the Speech-to-Text API enabled.
 
-- *Google Cloud Storage Bucket:* The script uses a bucket named languagestudies-transcription-audio to temporarily store the audio file for the API. You'll need to make sure this bucket exists in your project.
+- **Google Cloud Storage Bucket:** The script uses a bucket named languagestudies-transcription-audio to temporarily store the audio file for the API. You'll need to make sure this bucket exists in your project.
 
-- *Authentication:* You have to set up authentication so the script can talk to your Google Cloud project. The easiest way is to use gcloud auth application-default login and point the GOOGLE_APPLICATION_CREDENTIALS environment variable to your key file.
+- **Authentication:** You have to set up authentication so the script can talk to your Google Cloud project. The easiest way is to use gcloud auth application-default login and point the GOOGLE_APPLICATION_CREDENTIALS environment variable to your key file.
 
 # **How to Use**
 
