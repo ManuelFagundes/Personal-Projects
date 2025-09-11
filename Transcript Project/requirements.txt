@@ -1,0 +1,5 @@
+yt-dlp
+python-docx
+pysubs2
+google-cloud-speech
+google-cloud-storage
